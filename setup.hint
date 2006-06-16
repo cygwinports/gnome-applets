@@ -1,0 +1,4 @@
+category: Gnome
+requires: cygwin GConf2 atk gnome-panel gnome-vfs2 gstreamer010-plugins-base gtk2-x11 gucharmap libX11_6 libbonobo2 libbonoboui2 libglade2 libgnome-desktop2 libgnome2 libgnomeui2 libwnck1_18 libxklavier10
+sdesc: "GNOME Panel applets"
+ldesc: "A collection of applets for the GNOME Panel"
