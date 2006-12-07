@@ -11,7 +11,6 @@ Runtime requirements:
   gnome-vfs2-2.16.2-1
   gstreamer010-plugins-base-0.10.10-2
   gtk2-x11-2.10.6-1
-  gucharmap-1.6.0-1
   libX11_6-1.1.1-1
   libbonoboui2-2.16.0-1
   libdbus-glib_1_2-0.72-1
@@ -19,6 +18,7 @@ Runtime requirements:
   libgnome-desktop2-2.16.2-1
   libgnome2-2.16.0-1
   libgnomeui2-2.16.1-1
+  libgucharmap5-1.8.0-1
   libwnck1_18-2.16.1-1
   libxklavier11-3.1-1
 
