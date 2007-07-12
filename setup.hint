@@ -1,4 +1,4 @@
 category: Gnome
-requires: cygwin GConf2 atk gdk-pixbuf2 gnome-panel gnome-vfs2 gstreamer010-plugins-base gtk2-x11 libX11_6 libbonobo2 libbonoboui2 libdbus-glib_1_2 libglade2 libgnome-desktop2 libgnome2 libgnomeui2 libgucharmap5 libwnck1_18 libxklavier10
+requires: cygwin GConf2 atk glib2 gnome-panel gnome-vfs2 gstreamer010 gstreamer010-plugins-base gtk2-x11 libX11_6 libbonoboui2 libglade2 libgnome-desktop2 libgnome2 libgnomekbd libgnomeui2 libgtop2 libgucharmap5 libintl8 libnotify libwnck1_18 libxklavier11 libxml2 pango python python-gconf2 python-gnomeapplet python-gnomevfs2 python-gobject2
 sdesc: "GNOME Panel applets"
 ldesc: "A collection of applets for the GNOME Panel"
