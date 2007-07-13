@@ -21,7 +21,7 @@ Runtime requirements:
   libgnomekbd-2.18.2-2
   libgnomeui2-2.18.1-1
   libgtop2-2.14.7-1
-  libgucharmap5-1.8.0-1
+  libgucharmap6-1.10.0-1
   libintl8-0.15-1
   libnotify-0.4.4-1
   libwnck1_18-2.18.3-1
