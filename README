@@ -3,54 +3,54 @@ gnome-applets
 A collection of applets for the GNOME Panel.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  GConf2-2.20.1-1
-  atk-1.20.0-1
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gnome-panel-2.20.2-1
-  gnome-vfs2-2.20.1-1
-  gstreamer010-0.10.14-1
-  gstreamer010-plugins-base-0.10.14-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-11
+  atk-1.22.0-1
+  GConf2-2.22.1-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gnome-panel-2.22.2-1
+  gnome-vfs2-2.22.0-1
+  gstreamer010-0.10.19-1
+  gstreamer010-plugins-base-0.10.19-1
+  gtk2-x11-2.12.9-1
   libX11_6-1.1.3-1
-  libbonoboui2-2.20.0-1
+  libbonoboui2-2.22.0-1
   libglade2-2.6.2-1
-  libgnome-desktop2-2.20.2-1
-  libgnome2-2.20.1.1-1
-  libgnomekbd-2.20.0-1
-  libgnomeui2-2.20.1.1-1
+  libgnome-desktop2-2.22.2-1
+  libgnome2-2.22.0-1
+  libgnomekbd-2.22.0-1
+  libgnomeui2-2.22.1-1
   libgtop2-2.14.7-1
-  libgucharmap6-1.10.1-1
+  libgucharmap6-2.22.1-1
+  libgweather-2.22.2-1
   libintl8-0.15-1
   libnotify-0.4.4-1
-  libwnck1_22-2.20.2-1
-  libxklavier11-3.3-1
-  libxml2-2.6.30-1
-  pango-1.18.3-1
-  python-2.5.1-3
-  python-gconf2-2.20.1-1
-  python-gnomeapplet-2.20.0-1
-  python-gnomevfs2-2.20.1-1
-  python-gobject2-2.14.0-1
-  python-gtk2-2.12.0-1
+  libwnck1_22-2.22.2-1
+  libxklavier12-3.6-1
+  libxml2-2.6.32-1
+  pango-1.20.3-1
+  python-2.5.2-1
+  python-gconf2-2.22.1-1
+  python-gnomeapplet-2.22.0-1
+  python-gnomevfs2-2.22.1-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.2-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
-  rarian-0.6.0-1
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -62,15 +62,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-applets-2.20.0-1-src.tar.bz2
+  unpack gnome-applets-2.22.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-applets-2.20.0-1.cygport all
+  cygport ./gnome-applets-2.22.2-1.cygport all
 
 This will create:
-  /usr/src/gnome-applets-2.20.0-1-src.tar.bz2
-  /usr/src/gnome-applets-2.20.0-1.tar.bz2
+  /usr/src/gnome-applets-2.22.2-1-src.tar.bz2
+  /usr/src/gnome-applets-2.22.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -79,17 +79,12 @@ Files included in the binary package:
   /etc/gconf/schemas/charpick.schemas
   /etc/gconf/schemas/drivemount.schemas
   /etc/gconf/schemas/geyes.schemas
-  /etc/gconf/schemas/gweather.schemas
   /etc/gconf/schemas/mixer.schemas
   /etc/gconf/schemas/multiload.schemas
   /etc/gconf/schemas/stickynotes.schemas
   /etc/postinstall/gnome-applets.sh
   /etc/preremove/gnome-applets.sh
-  /usr/bin/cyggweather-0.dll
   /usr/bin/invest-chart
-  /usr/include/libgweather/gweather-gconf.h
-  /usr/include/libgweather/gweather-prefs.h
-  /usr/include/libgweather/weather.h
   /usr/lib/bonobo/servers/GNOME_AccessxStatusApplet.server
   /usr/lib/bonobo/servers/GNOME_CDPlayerApplet.server
   /usr/lib/bonobo/servers/GNOME_CharpickerApplet.server
@@ -107,8 +102,6 @@ Files included in the binary package:
   /usr/lib/bonobo/servers/GNOME_Panel_WirelessApplet.server
   /usr/lib/bonobo/servers/GNOME_StickyNotesApplet.server
   /usr/lib/bonobo/servers/Invest_Applet.server
-  /usr/lib/libgweather.dll.a
-  /usr/lib/libgweather.la
   /usr/lib/panel-2.0/accessx-status-applet.exe
   /usr/lib/panel-2.0/charpick_applet2.exe
   /usr/lib/panel-2.0/drivemount_applet2.exe
@@ -121,7 +114,6 @@ Files included in the binary package:
   /usr/lib/panel-2.0/null_applet.exe
   /usr/lib/panel-2.0/stickynotes_applet.exe
   /usr/lib/panel-2.0/trashapplet.exe
-  /usr/lib/pkgconfig/gweather.pc
   /usr/lib/python2.5/site-packages/invest/__init__.py
   /usr/lib/python2.5/site-packages/invest/__init__.pyc
   /usr/lib/python2.5/site-packages/invest/__init__.pyo
@@ -146,15 +138,14 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/invest/widgets.py
   /usr/lib/python2.5/site-packages/invest/widgets.pyc
   /usr/lib/python2.5/site-packages/invest/widgets.pyo
-  /usr/share/doc/Cygwin/gnome-applets-2.20.0.README
-  /usr/share/doc/gnome-applets-2.20.0/AUTHORS
-  /usr/share/doc/gnome-applets-2.20.0/COPYING
-  /usr/share/doc/gnome-applets-2.20.0/COPYING-DOCS
-  /usr/share/doc/gnome-applets-2.20.0/ChangeLog
-  /usr/share/doc/gnome-applets-2.20.0/INSTALL
-  /usr/share/doc/gnome-applets-2.20.0/MAINTAINERS
-  /usr/share/doc/gnome-applets-2.20.0/NEWS
-  /usr/share/doc/gnome-applets-2.20.0/README
+  /usr/share/doc/gnome-applets-2.22.2/AUTHORS
+  /usr/share/doc/gnome-applets-2.22.2/COPYING
+  /usr/share/doc/gnome-applets-2.22.2/COPYING-DOCS
+  /usr/share/doc/gnome-applets-2.22.2/ChangeLog
+  /usr/share/doc/gnome-applets-2.22.2/INSTALL
+  /usr/share/doc/gnome-applets-2.22.2/MAINTAINERS
+  /usr/share/doc/gnome-applets-2.22.2/NEWS
+  /usr/share/doc/gnome-applets-2.22.2/README
   /usr/share/gnome-2.0/ui/GNOME_AccessxApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_CharpickerApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_DriveMountApplet.xml
@@ -188,9 +179,7 @@ Files included in the binary package:
   /usr/share/gnome-applets/glade/gswitchit.glade
   /usr/share/gnome-applets/glade/prefs-dialog.glade
   /usr/share/gnome-applets/glade/stickynotes.glade
-  /usr/share/gnome-applets/glade/trashapplet.glade
-  /usr/share/gnome-applets/gweather/Locations.xml
-  /usr/share/gnome-applets/gweather/locations.dtd
+  /usr/share/gnome-applets/glade/trashapplet-empty-progress.ui
   /usr/share/gnome-applets/invest-applet/invest-16.png
   /usr/share/gnome-applets/invest-applet/invest-button.png
   /usr/share/gnome-applets/invest-applet/invest.svg
@@ -255,6 +244,18 @@ Files included in the binary package:
   /usr/share/gnome/help/accessx-status/es/figures/accessx_sticky-meta-key.png
   /usr/share/gnome/help/accessx-status/es/figures/accessx_sticky-shift-key.png
   /usr/share/gnome/help/accessx-status/es/figures/accessx_sticky-windows-key.png
+  /usr/share/gnome/help/accessx-status/fi/accessx-status.xml
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx-status-applet.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx-status-disabled.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_bounce-keys.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_mouse-keys.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_slow-keys.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-altGr-key.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-ctrl-key.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-keys.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-meta-key.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-shift-key.png
+  /usr/share/gnome/help/accessx-status/fi/figures/accessx_sticky-windows-key.png
   /usr/share/gnome/help/accessx-status/fr/accessx-status.xml
   /usr/share/gnome/help/accessx-status/fr/figures/accessx-status-applet.png
   /usr/share/gnome/help/accessx-status/fr/figures/accessx-status-disabled.png
@@ -338,6 +339,11 @@ Files included in the binary package:
   /usr/share/gnome/help/char-palette/bg/figures/charpalette_chargroup.png
   /usr/share/gnome/help/char-palette/bg/figures/charpick-preferences.png
   /usr/share/gnome/help/char-palette/bg/figures/charpick_characters.png
+  /usr/share/gnome/help/char-palette/ca/char-palette.xml
+  /usr/share/gnome/help/char-palette/ca/figures/charpalette_applet.png
+  /usr/share/gnome/help/char-palette/ca/figures/charpalette_chargroup.png
+  /usr/share/gnome/help/char-palette/ca/figures/charpick-preferences.png
+  /usr/share/gnome/help/char-palette/ca/figures/charpick_characters.png
   /usr/share/gnome/help/char-palette/en_GB/char-palette.xml
   /usr/share/gnome/help/char-palette/en_GB/figures/charpalette_applet.png
   /usr/share/gnome/help/char-palette/en_GB/figures/charpalette_chargroup.png
@@ -348,6 +354,11 @@ Files included in the binary package:
   /usr/share/gnome/help/char-palette/es/figures/charpalette_chargroup.png
   /usr/share/gnome/help/char-palette/es/figures/charpick-preferences.png
   /usr/share/gnome/help/char-palette/es/figures/charpick_characters.png
+  /usr/share/gnome/help/char-palette/fi/char-palette.xml
+  /usr/share/gnome/help/char-palette/fi/figures/charpalette_applet.png
+  /usr/share/gnome/help/char-palette/fi/figures/charpalette_chargroup.png
+  /usr/share/gnome/help/char-palette/fi/figures/charpick-preferences.png
+  /usr/share/gnome/help/char-palette/fi/figures/charpick_characters.png
   /usr/share/gnome/help/char-palette/fr/char-palette.xml
   /usr/share/gnome/help/char-palette/fr/figures/charpalette_applet.png
   /usr/share/gnome/help/char-palette/fr/figures/charpalette_chargroup.png
@@ -358,6 +369,11 @@ Files included in the binary package:
   /usr/share/gnome/help/char-palette/it/figures/charpalette_chargroup.png
   /usr/share/gnome/help/char-palette/it/figures/charpick-preferences.png
   /usr/share/gnome/help/char-palette/it/figures/charpick_characters.png
+  /usr/share/gnome/help/char-palette/ko/char-palette.xml
+  /usr/share/gnome/help/char-palette/ko/figures/charpalette_applet.png
+  /usr/share/gnome/help/char-palette/ko/figures/charpalette_chargroup.png
+  /usr/share/gnome/help/char-palette/ko/figures/charpick-preferences.png
+  /usr/share/gnome/help/char-palette/ko/figures/charpick_characters.png
   /usr/share/gnome/help/char-palette/nl/char-palette.xml
   /usr/share/gnome/help/char-palette/nl/figures/charpalette_applet.png
   /usr/share/gnome/help/char-palette/nl/figures/charpalette_chargroup.png
@@ -407,6 +423,12 @@ Files included in the binary package:
   /usr/share/gnome/help/drivemount/es/figures/drivemount-applet_mount.png
   /usr/share/gnome/help/drivemount/es/figures/drivemount-applet_open.png
   /usr/share/gnome/help/drivemount/es/figures/drivemount-applet_status.png
+  /usr/share/gnome/help/drivemount/fi/drivemount.xml
+  /usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_eject.png
+  /usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_example.png
+  /usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_mount.png
+  /usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_open.png
+  /usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_status.png
   /usr/share/gnome/help/drivemount/fr/drivemount.xml
   /usr/share/gnome/help/drivemount/fr/figures/drivemount-applet_eject.png
   /usr/share/gnome/help/drivemount/fr/figures/drivemount-applet_example.png
@@ -419,6 +441,12 @@ Files included in the binary package:
   /usr/share/gnome/help/drivemount/it/figures/drivemount-applet_mount.png
   /usr/share/gnome/help/drivemount/it/figures/drivemount-applet_open.png
   /usr/share/gnome/help/drivemount/it/figures/drivemount-applet_status.png
+  /usr/share/gnome/help/drivemount/ko/drivemount.xml
+  /usr/share/gnome/help/drivemount/ko/figures/drivemount-applet_eject.png
+  /usr/share/gnome/help/drivemount/ko/figures/drivemount-applet_example.png
+  /usr/share/gnome/help/drivemount/ko/figures/drivemount-applet_mount.png
+  /usr/share/gnome/help/drivemount/ko/figures/drivemount-applet_open.png
+  /usr/share/gnome/help/drivemount/ko/figures/drivemount-applet_status.png
   /usr/share/gnome/help/drivemount/oc/drivemount.xml
   /usr/share/gnome/help/drivemount/oc/figures/drivemount-applet_eject.png
   /usr/share/gnome/help/drivemount/oc/figures/drivemount-applet_example.png
@@ -462,14 +490,20 @@ Files included in the binary package:
   /usr/share/gnome/help/geyes/bg/geyes.xml
   /usr/share/gnome/help/geyes/ca/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/ca/geyes.xml
+  /usr/share/gnome/help/geyes/de/figures/geyes_applet.png
+  /usr/share/gnome/help/geyes/de/geyes.xml
   /usr/share/gnome/help/geyes/en_GB/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/en_GB/geyes.xml
   /usr/share/gnome/help/geyes/es/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/es/geyes.xml
+  /usr/share/gnome/help/geyes/fi/figures/geyes_applet.png
+  /usr/share/gnome/help/geyes/fi/geyes.xml
   /usr/share/gnome/help/geyes/fr/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/fr/geyes.xml
   /usr/share/gnome/help/geyes/it/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/it/geyes.xml
+  /usr/share/gnome/help/geyes/ko/figures/geyes_applet.png
+  /usr/share/gnome/help/geyes/ko/geyes.xml
   /usr/share/gnome/help/geyes/oc/figures/geyes_applet.png
   /usr/share/gnome/help/geyes/oc/geyes.xml
   /usr/share/gnome/help/geyes/ru/figures/geyes_applet.png
@@ -480,9 +514,11 @@ Files included in the binary package:
   /usr/share/gnome/help/geyes/uk/geyes.xml
   /usr/share/gnome/help/gswitchit/C/gswitchit.xml
   /usr/share/gnome/help/gswitchit/C/legal.xml
+  /usr/share/gnome/help/gswitchit/ca/gswitchit.xml
   /usr/share/gnome/help/gswitchit/el/gswitchit.xml
   /usr/share/gnome/help/gswitchit/en_GB/gswitchit.xml
   /usr/share/gnome/help/gswitchit/es/gswitchit.xml
+  /usr/share/gnome/help/gswitchit/fi/gswitchit.xml
   /usr/share/gnome/help/gswitchit/fr/gswitchit.xml
   /usr/share/gnome/help/gswitchit/oc/gswitchit.xml
   /usr/share/gnome/help/gswitchit/ru/gswitchit.xml
@@ -534,6 +570,21 @@ Files included in the binary package:
   /usr/share/gnome/help/gweather/es/figures/stock_weather-storm.png
   /usr/share/gnome/help/gweather/es/figures/stock_weather-sunny.png
   /usr/share/gnome/help/gweather/es/gweather.xml
+  /usr/share/gnome/help/gweather/fi/figures/gweather-details.png
+  /usr/share/gnome/help/gweather/fi/figures/gweather-menu-prefs.png
+  /usr/share/gnome/help/gweather/fi/figures/gweather-prefs-general.png
+  /usr/share/gnome/help/gweather/fi/figures/gweather-prefs-locations.png
+  /usr/share/gnome/help/gweather/fi/figures/gweather_applet.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-cloudy.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-few-clouds.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-fog.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-night-clear.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-night-few-clouds.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-showers.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-snow.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-storm.png
+  /usr/share/gnome/help/gweather/fi/figures/stock_weather-sunny.png
+  /usr/share/gnome/help/gweather/fi/gweather.xml
   /usr/share/gnome/help/gweather/fr/figures/gweather-details.png
   /usr/share/gnome/help/gweather/fr/figures/gweather-menu-prefs.png
   /usr/share/gnome/help/gweather/fr/figures/gweather-prefs-general.png
@@ -549,6 +600,21 @@ Files included in the binary package:
   /usr/share/gnome/help/gweather/fr/figures/stock_weather-storm.png
   /usr/share/gnome/help/gweather/fr/figures/stock_weather-sunny.png
   /usr/share/gnome/help/gweather/fr/gweather.xml
+  /usr/share/gnome/help/gweather/ko/figures/gweather-details.png
+  /usr/share/gnome/help/gweather/ko/figures/gweather-menu-prefs.png
+  /usr/share/gnome/help/gweather/ko/figures/gweather-prefs-general.png
+  /usr/share/gnome/help/gweather/ko/figures/gweather-prefs-locations.png
+  /usr/share/gnome/help/gweather/ko/figures/gweather_applet.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-cloudy.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-few-clouds.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-fog.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-night-clear.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-night-few-clouds.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-showers.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-snow.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-storm.png
+  /usr/share/gnome/help/gweather/ko/figures/stock_weather-sunny.png
+  /usr/share/gnome/help/gweather/ko/gweather.xml
   /usr/share/gnome/help/gweather/nl/figures/gweather-details.png
   /usr/share/gnome/help/gweather/nl/figures/gweather-menu-prefs.png
   /usr/share/gnome/help/gweather/nl/figures/gweather-prefs-general.png
@@ -594,6 +660,36 @@ Files included in the binary package:
   /usr/share/gnome/help/gweather/pa/figures/stock_weather-storm.png
   /usr/share/gnome/help/gweather/pa/figures/stock_weather-sunny.png
   /usr/share/gnome/help/gweather/pa/gweather.xml
+  /usr/share/gnome/help/gweather/pt_BR/figures/gweather-details.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/gweather-menu-prefs.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/gweather-prefs-general.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/gweather-prefs-locations.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/gweather_applet.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-cloudy.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-few-clouds.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-fog.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-night-clear.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-night-few-clouds.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-showers.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-snow.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-storm.png
+  /usr/share/gnome/help/gweather/pt_BR/figures/stock_weather-sunny.png
+  /usr/share/gnome/help/gweather/pt_BR/gweather.xml
+  /usr/share/gnome/help/gweather/ru/figures/gweather-details.png
+  /usr/share/gnome/help/gweather/ru/figures/gweather-menu-prefs.png
+  /usr/share/gnome/help/gweather/ru/figures/gweather-prefs-general.png
+  /usr/share/gnome/help/gweather/ru/figures/gweather-prefs-locations.png
+  /usr/share/gnome/help/gweather/ru/figures/gweather_applet.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-cloudy.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-few-clouds.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-fog.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-night-clear.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-night-few-clouds.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-showers.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-snow.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-storm.png
+  /usr/share/gnome/help/gweather/ru/figures/stock_weather-sunny.png
+  /usr/share/gnome/help/gweather/ru/gweather.xml
   /usr/share/gnome/help/gweather/sv/figures/gweather-details.png
   /usr/share/gnome/help/gweather/sv/figures/gweather-menu-prefs.png
   /usr/share/gnome/help/gweather/sv/figures/gweather-prefs-general.png
@@ -633,14 +729,20 @@ Files included in the binary package:
   /usr/share/gnome/help/mixer_applet2/en_GB/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/es/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/es/mixer_applet2.xml
+  /usr/share/gnome/help/mixer_applet2/fi/figures/volumecontrol_applet.png
+  /usr/share/gnome/help/mixer_applet2/fi/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/fr/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/fr/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/it/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/it/mixer_applet2.xml
+  /usr/share/gnome/help/mixer_applet2/ko/figures/volumecontrol_applet.png
+  /usr/share/gnome/help/mixer_applet2/ko/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/oc/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/oc/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/pa/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/pa/mixer_applet2.xml
+  /usr/share/gnome/help/mixer_applet2/pt_BR/figures/volumecontrol_applet.png
+  /usr/share/gnome/help/mixer_applet2/pt_BR/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/ru/figures/volumecontrol_applet.png
   /usr/share/gnome/help/mixer_applet2/ru/mixer_applet2.xml
   /usr/share/gnome/help/mixer_applet2/sv/figures/volumecontrol_applet.png
@@ -664,10 +766,18 @@ Files included in the binary package:
   /usr/share/gnome/help/multiload/es/figures/system-monitor-applet_window.png
   /usr/share/gnome/help/multiload/es/figures/system_monitor.png
   /usr/share/gnome/help/multiload/es/multiload.xml
+  /usr/share/gnome/help/multiload/fi/figures/multiload-preferences.png
+  /usr/share/gnome/help/multiload/fi/figures/system-monitor-applet_window.png
+  /usr/share/gnome/help/multiload/fi/figures/system_monitor.png
+  /usr/share/gnome/help/multiload/fi/multiload.xml
   /usr/share/gnome/help/multiload/fr/figures/multiload-preferences.png
   /usr/share/gnome/help/multiload/fr/figures/system-monitor-applet_window.png
   /usr/share/gnome/help/multiload/fr/figures/system_monitor.png
   /usr/share/gnome/help/multiload/fr/multiload.xml
+  /usr/share/gnome/help/multiload/ko/figures/multiload-preferences.png
+  /usr/share/gnome/help/multiload/ko/figures/system-monitor-applet_window.png
+  /usr/share/gnome/help/multiload/ko/figures/system_monitor.png
+  /usr/share/gnome/help/multiload/ko/multiload.xml
   /usr/share/gnome/help/multiload/oc/figures/multiload-preferences.png
   /usr/share/gnome/help/multiload/oc/figures/system-monitor-applet_window.png
   /usr/share/gnome/help/multiload/oc/figures/system_monitor.png
@@ -676,6 +786,10 @@ Files included in the binary package:
   /usr/share/gnome/help/multiload/pa/figures/system-monitor-applet_window.png
   /usr/share/gnome/help/multiload/pa/figures/system_monitor.png
   /usr/share/gnome/help/multiload/pa/multiload.xml
+  /usr/share/gnome/help/multiload/pt_BR/figures/multiload-preferences.png
+  /usr/share/gnome/help/multiload/pt_BR/figures/system-monitor-applet_window.png
+  /usr/share/gnome/help/multiload/pt_BR/figures/system_monitor.png
+  /usr/share/gnome/help/multiload/pt_BR/multiload.xml
   /usr/share/gnome/help/multiload/ru/figures/multiload-preferences.png
   /usr/share/gnome/help/multiload/ru/figures/system-monitor-applet_window.png
   /usr/share/gnome/help/multiload/ru/figures/system_monitor.png
@@ -695,6 +809,18 @@ Files included in the binary package:
   /usr/share/gnome/help/stickynotes_applet/C/figures/stickynotes_applet.png
   /usr/share/gnome/help/stickynotes_applet/C/legal.xml
   /usr/share/gnome/help/stickynotes_applet/C/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/ca/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/ca/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/ca/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ca/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ca/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/ca/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/el/stickynotes_applet.xml
   /usr/share/gnome/help/stickynotes_applet/en_GB/figures/stickynote-right-menu-lock.png
   /usr/share/gnome/help/stickynotes_applet/en_GB/figures/stickynote-right-menu-new.png
   /usr/share/gnome/help/stickynotes_applet/en_GB/figures/stickynotes-note-prefs.png
@@ -707,12 +833,24 @@ Files included in the binary package:
   /usr/share/gnome/help/stickynotes_applet/es/figures/stickynotes-prefs.png
   /usr/share/gnome/help/stickynotes_applet/es/figures/stickynotes_applet.png
   /usr/share/gnome/help/stickynotes_applet/es/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/fi/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/fi/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/fi/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/fi/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/fi/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/fi/stickynotes_applet.xml
   /usr/share/gnome/help/stickynotes_applet/fr/figures/stickynote-right-menu-lock.png
   /usr/share/gnome/help/stickynotes_applet/fr/figures/stickynote-right-menu-new.png
   /usr/share/gnome/help/stickynotes_applet/fr/figures/stickynotes-note-prefs.png
   /usr/share/gnome/help/stickynotes_applet/fr/figures/stickynotes-prefs.png
   /usr/share/gnome/help/stickynotes_applet/fr/figures/stickynotes_applet.png
   /usr/share/gnome/help/stickynotes_applet/fr/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/ko/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/ko/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/ko/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ko/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ko/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/ko/stickynotes_applet.xml
   /usr/share/gnome/help/stickynotes_applet/oc/figures/stickynote-right-menu-lock.png
   /usr/share/gnome/help/stickynotes_applet/oc/figures/stickynote-right-menu-new.png
   /usr/share/gnome/help/stickynotes_applet/oc/figures/stickynotes-note-prefs.png
@@ -725,6 +863,18 @@ Files included in the binary package:
   /usr/share/gnome/help/stickynotes_applet/pa/figures/stickynotes-prefs.png
   /usr/share/gnome/help/stickynotes_applet/pa/figures/stickynotes_applet.png
   /usr/share/gnome/help/stickynotes_applet/pa/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/pt_BR/stickynotes_applet.xml
+  /usr/share/gnome/help/stickynotes_applet/ru/figures/stickynote-right-menu-lock.png
+  /usr/share/gnome/help/stickynotes_applet/ru/figures/stickynote-right-menu-new.png
+  /usr/share/gnome/help/stickynotes_applet/ru/figures/stickynotes-note-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ru/figures/stickynotes-prefs.png
+  /usr/share/gnome/help/stickynotes_applet/ru/figures/stickynotes_applet.png
+  /usr/share/gnome/help/stickynotes_applet/ru/stickynotes_applet.xml
   /usr/share/gnome/help/stickynotes_applet/sv/figures/stickynote-right-menu-lock.png
   /usr/share/gnome/help/stickynotes_applet/sv/figures/stickynote-right-menu-new.png
   /usr/share/gnome/help/stickynotes_applet/sv/figures/stickynotes-note-prefs.png
@@ -740,10 +890,18 @@ Files included in the binary package:
   /usr/share/gnome/help/trashapplet/C/figures/trash-applet.png
   /usr/share/gnome/help/trashapplet/C/legal.xml
   /usr/share/gnome/help/trashapplet/C/trashapplet.xml
+  /usr/share/gnome/help/trashapplet/ca/figures/trash-applet.png
+  /usr/share/gnome/help/trashapplet/ca/trashapplet.xml
+  /usr/share/gnome/help/trashapplet/da/figures/trash-applet.png
+  /usr/share/gnome/help/trashapplet/da/trashapplet.xml
+  /usr/share/gnome/help/trashapplet/de/figures/trash-applet.png
+  /usr/share/gnome/help/trashapplet/de/trashapplet.xml
   /usr/share/gnome/help/trashapplet/en_GB/figures/trash-applet.png
   /usr/share/gnome/help/trashapplet/en_GB/trashapplet.xml
   /usr/share/gnome/help/trashapplet/es/figures/trash-applet.png
   /usr/share/gnome/help/trashapplet/es/trashapplet.xml
+  /usr/share/gnome/help/trashapplet/fi/figures/trash-applet.png
+  /usr/share/gnome/help/trashapplet/fi/trashapplet.xml
   /usr/share/gnome/help/trashapplet/fr/figures/trash-applet.png
   /usr/share/gnome/help/trashapplet/fr/trashapplet.xml
   /usr/share/gnome/help/trashapplet/it/figures/trash-applet.png
@@ -829,6 +987,7 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/gnome-applets-2.0.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-applets-2.0.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-applets-2.0.mo
+  /usr/share/locale/kn/LC_MESSAGES/gnome-applets-2.0.mo
   /usr/share/locale/ko/LC_MESSAGES/gnome-applets-2.0.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-applets-2.0.mo
   /usr/share/locale/ky/LC_MESSAGES/gnome-applets-2.0.mo
@@ -876,6 +1035,7 @@ Files included in the binary package:
   /usr/share/omf/accessx-status/accessx-status-ca.omf
   /usr/share/omf/accessx-status/accessx-status-en_GB.omf
   /usr/share/omf/accessx-status/accessx-status-es.omf
+  /usr/share/omf/accessx-status/accessx-status-fi.omf
   /usr/share/omf/accessx-status/accessx-status-fr.omf
   /usr/share/omf/accessx-status/accessx-status-it.omf
   /usr/share/omf/accessx-status/accessx-status-nl.omf
@@ -884,10 +1044,13 @@ Files included in the binary package:
   /usr/share/omf/accessx-status/accessx-status-uk.omf
   /usr/share/omf/char-palette/char-palette-C.omf
   /usr/share/omf/char-palette/char-palette-bg.omf
+  /usr/share/omf/char-palette/char-palette-ca.omf
   /usr/share/omf/char-palette/char-palette-en_GB.omf
   /usr/share/omf/char-palette/char-palette-es.omf
+  /usr/share/omf/char-palette/char-palette-fi.omf
   /usr/share/omf/char-palette/char-palette-fr.omf
   /usr/share/omf/char-palette/char-palette-it.omf
+  /usr/share/omf/char-palette/char-palette-ko.omf
   /usr/share/omf/char-palette/char-palette-nl.omf
   /usr/share/omf/char-palette/char-palette-oc.omf
   /usr/share/omf/char-palette/char-palette-pt_BR.omf
@@ -897,8 +1060,10 @@ Files included in the binary package:
   /usr/share/omf/drivemount/drivemount-C.omf
   /usr/share/omf/drivemount/drivemount-en_GB.omf
   /usr/share/omf/drivemount/drivemount-es.omf
+  /usr/share/omf/drivemount/drivemount-fi.omf
   /usr/share/omf/drivemount/drivemount-fr.omf
   /usr/share/omf/drivemount/drivemount-it.omf
+  /usr/share/omf/drivemount/drivemount-ko.omf
   /usr/share/omf/drivemount/drivemount-oc.omf
   /usr/share/omf/drivemount/drivemount-pa.omf
   /usr/share/omf/drivemount/drivemount-ru.omf
@@ -908,18 +1073,23 @@ Files included in the binary package:
   /usr/share/omf/geyes/geyes-C.omf
   /usr/share/omf/geyes/geyes-bg.omf
   /usr/share/omf/geyes/geyes-ca.omf
+  /usr/share/omf/geyes/geyes-de.omf
   /usr/share/omf/geyes/geyes-en_GB.omf
   /usr/share/omf/geyes/geyes-es.omf
+  /usr/share/omf/geyes/geyes-fi.omf
   /usr/share/omf/geyes/geyes-fr.omf
   /usr/share/omf/geyes/geyes-it.omf
+  /usr/share/omf/geyes/geyes-ko.omf
   /usr/share/omf/geyes/geyes-oc.omf
   /usr/share/omf/geyes/geyes-ru.omf
   /usr/share/omf/geyes/geyes-sv.omf
   /usr/share/omf/geyes/geyes-uk.omf
   /usr/share/omf/gswitchit/gswitchit-C.omf
+  /usr/share/omf/gswitchit/gswitchit-ca.omf
   /usr/share/omf/gswitchit/gswitchit-el.omf
   /usr/share/omf/gswitchit/gswitchit-en_GB.omf
   /usr/share/omf/gswitchit/gswitchit-es.omf
+  /usr/share/omf/gswitchit/gswitchit-fi.omf
   /usr/share/omf/gswitchit/gswitchit-fr.omf
   /usr/share/omf/gswitchit/gswitchit-oc.omf
   /usr/share/omf/gswitchit/gswitchit-ru.omf
@@ -928,20 +1098,27 @@ Files included in the binary package:
   /usr/share/omf/gweather/gweather-C.omf
   /usr/share/omf/gweather/gweather-en_GB.omf
   /usr/share/omf/gweather/gweather-es.omf
+  /usr/share/omf/gweather/gweather-fi.omf
   /usr/share/omf/gweather/gweather-fr.omf
+  /usr/share/omf/gweather/gweather-ko.omf
   /usr/share/omf/gweather/gweather-nl.omf
   /usr/share/omf/gweather/gweather-oc.omf
   /usr/share/omf/gweather/gweather-pa.omf
+  /usr/share/omf/gweather/gweather-pt_BR.omf
+  /usr/share/omf/gweather/gweather-ru.omf
   /usr/share/omf/gweather/gweather-sv.omf
   /usr/share/omf/gweather/gweather-uk.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-C.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-ca.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-en_GB.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-es.omf
+  /usr/share/omf/mixer_applet2/mixer_applet2-fi.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-fr.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-it.omf
+  /usr/share/omf/mixer_applet2/mixer_applet2-ko.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-oc.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-pa.omf
+  /usr/share/omf/mixer_applet2/mixer_applet2-pt_BR.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-ru.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-sv.omf
   /usr/share/omf/mixer_applet2/mixer_applet2-uk.omf
@@ -949,23 +1126,36 @@ Files included in the binary package:
   /usr/share/omf/multiload/multiload-ca.omf
   /usr/share/omf/multiload/multiload-en_GB.omf
   /usr/share/omf/multiload/multiload-es.omf
+  /usr/share/omf/multiload/multiload-fi.omf
   /usr/share/omf/multiload/multiload-fr.omf
+  /usr/share/omf/multiload/multiload-ko.omf
   /usr/share/omf/multiload/multiload-oc.omf
   /usr/share/omf/multiload/multiload-pa.omf
+  /usr/share/omf/multiload/multiload-pt_BR.omf
   /usr/share/omf/multiload/multiload-ru.omf
   /usr/share/omf/multiload/multiload-sv.omf
   /usr/share/omf/multiload/multiload-uk.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-C.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-ca.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-el.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-en_GB.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-es.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-fi.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-fr.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-ko.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-oc.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-pa.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-pt_BR.omf
+  /usr/share/omf/stickynotes_applet/stickynotes_applet-ru.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-sv.omf
   /usr/share/omf/stickynotes_applet/stickynotes_applet-uk.omf
   /usr/share/omf/trashapplet/trashapplet-C.omf
+  /usr/share/omf/trashapplet/trashapplet-ca.omf
+  /usr/share/omf/trashapplet/trashapplet-da.omf
+  /usr/share/omf/trashapplet/trashapplet-de.omf
   /usr/share/omf/trashapplet/trashapplet-en_GB.omf
   /usr/share/omf/trashapplet/trashapplet-es.omf
+  /usr/share/omf/trashapplet/trashapplet-fi.omf
   /usr/share/omf/trashapplet/trashapplet-fr.omf
   /usr/share/omf/trashapplet/trashapplet-it.omf
   /usr/share/omf/trashapplet/trashapplet-nl.omf
@@ -1106,6 +1296,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.22.2-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.0-1 -----
 Version bump for GNOME 2.20.
