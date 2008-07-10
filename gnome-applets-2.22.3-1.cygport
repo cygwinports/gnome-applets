@@ -1,0 +1,7 @@
+inherit gnome2
+
+DESCRIPTION="GNOME panel applets"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/panel-2.0 --disable-ipv6 --with-gstreamer=0.10"
+
+DIFF_EXCLUDES='po defs.py'
