@@ -17,7 +17,7 @@ Runtime requirements:
   libgnomeui2_0-2.24.0-1
   libgstreamer0.10_0-0.10.21-2
   libgtk2.0_0-2.14.5-1
-  libgtop2-2.14.7-1
+  libgtop2.0_7-2.24.0-1
   libgucharmap7-2.24.2-1
   libgweather1-2.24.2-1
   libintl8-0.17-2
