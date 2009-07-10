@@ -3,26 +3,26 @@ gnome-applets
 A collection of applets for the GNOME Panel.
 
 Runtime requirements:
-  cygwin-1.7.0-48
-  gnome-panel-2.26.2-1
+  cygwin-1.7.0-50
+  gnome-panel-2.26.3-1
   libatk1.0_0-1.26.0-1
   libbonobo2_0-2.24.1-1
   libbonoboui2_0-2.24.1-1
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libglib2.0_0-2.20.3-1
-  libgnome-desktop2_11-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.3-1
+  libglib2.0_0-2.20.4-1
+  libgnome-desktop2_11-2.26.3-1
   libgnomekbd3-2.26.0-1
-  libgtk2.0_0-2.16.2-1
+  libgtk2.0_0-2.16.3-1
   libgtop2.0_7-2.26.1-1
-  libgucharmap7-2.26.2-1
-  libgweather1-2.26.0-1
-  libintl8-0.17-10
+  libgucharmap7-2.26.3-1
+  libgweather1-2.26.2-1
+  libintl8-0.17-11
   libnotify1-0.4.5-10
   libpango1.0_0-1.24.2-1
-  libwnck1_22-2.26.0-1
-  libX11_6-1.2-10
+  libwnck1_22-2.26.2-1
+  libX11_6-1.2.1-1
   libxklavier12-3.9-1
   libxml2-2.7.3-10
   python-2.5.4-10
@@ -37,13 +37,13 @@ Build requirements:
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.9.6-1
+  cygport-0.9.7-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
   gnome-doc-utils-0.16.1-2
   intltool-0.40.6-1
-  libtool-2.2.7a-12
+  libtool-2.2.7a-13
   make-3.81-2
   pkg-config-0.23b-10
   rarian-0.8.1-11
@@ -58,15 +58,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-applets-2.26.2-1-src.tar.bz2
+  unpack gnome-applets-2.26.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-applets-2.26.2-1.cygport all
+  cygport ./gnome-applets-2.26.3-1.cygport all
 
 This will create:
-  /usr/src/gnome-applets-2.26.2-1-src.tar.bz2
-  /usr/src/gnome-applets-2.26.2-1.tar.bz2
+  /usr/src/gnome-applets-2.26.3-1-src.tar.bz2
+  /usr/src/gnome-applets-2.26.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -1506,6 +1506,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.26.3-1 -----
+Version bump.
 
 ----- version 2.26.2-1 -----
 Version bump.
