@@ -1,4 +1,4 @@
 category: Gnome
-requires: GConf2 gnome-panel libatk1.0_0 libbonobo2_0 libbonoboui2_0 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-desktop2_11 libgnomekbd4 libgtk2.0_0 libgtop2.0_7 libgucharmap7 libgweather1 libintl8 libnotify1 libpango1.0_0 libwnck1_22 libX11_6 libxklavier15 libxml2 python python-gconf2 python-gnome2 python-gnomeapplet python-gobject2.0 python-gtk2.0
+requires: GConf2 gnome-panel libatk1.0_0 libcairo2 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk3_0 libgtop2.0_7 libgucharmap2.90_7 libgweather3_0 libintl8 libnotify4 libpango1.0_0 libwnck3_0 libX11_6 libxml2 python python-dbus python-gi python-GConf2.0 python-Gtk3.0
 sdesc: "GNOME Panel applets"
 ldesc: "A collection of applets for the GNOME Panel"
