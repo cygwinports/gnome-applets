@@ -1,0 +1,13 @@
+inherit gnome2
+
+NAME="gnome-applets"
+VERSION=3.5.92
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME Panel applets"
+DESCRIPTION="A collection of applets for the GNOME Panel"
+REQUIRES="gnome-panel girepository-GConf2.0 girepository-Gtk3.0"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/gnome-panel/4.0"
+
+DIFF_EXCLUDES='po defs.py'
