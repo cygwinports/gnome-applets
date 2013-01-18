@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gnome-applets"
 VERSION=3.5.92
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME"
 SUMMARY="GNOME Panel applets"
 DESCRIPTION="A collection of applets for the GNOME Panel"
