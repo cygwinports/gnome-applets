@@ -14,3 +14,6 @@ PATCH_URI="
 "
 
 DIFF_EXCLUDES='po defs.py'
+
+# libexecdir: avoid collision with mate-applets
+CYGCONF_ARGS="--libexecdir=/usr/libexec/gnome-panel"
