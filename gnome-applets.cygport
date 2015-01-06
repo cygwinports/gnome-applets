@@ -1,17 +1,12 @@
 inherit gnome2
 
 NAME="gnome-applets"
-VERSION=3.5.92
-RELEASE=3
+VERSION=3.14.0
+RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Panel applets"
 DESCRIPTION="A collection of applets for the GNOME Panel"
 REQUIRES="gnome-panel girepository-GConf2.0 girepository-Gtk3.0"
-
-PATCH_URI="
-	3.5.92-disable-gweather.patch
-	3.5.92-missing-decls.patch
-"
 
 DIFF_EXCLUDES='po defs.py'
 
