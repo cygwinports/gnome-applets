@@ -1,0 +1,436 @@
+--- origsrc/gnome-applets-3.22.0/accessx-status/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/accessx-status/Makefile.am	2017-03-07 03:08:15.824448100 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = help pixmaps src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libaccessx-status-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygaccessx-status-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.AccessxStatusApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/accessx-status/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/accessx-status/src/Makefile.am	2017-03-07 02:59:24.078977700 -0600
+@@ -27,7 +27,7 @@ libaccessx_status_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libaccessx_status_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/battstat/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/battstat/Makefile.am	2017-03-07 03:08:15.834451400 -0600
+@@ -20,7 +20,7 @@ gsettings_SCHEMAS = $(gsettings_schemas_
+ 
+ @GSETTINGS_RULES@
+ 
+-APPLET_LOCATION = $(pkglibdir)/libbattery-status-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygbattery-status-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.BattstatApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/battstat/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/battstat/src/Makefile.am	2017-03-07 02:59:35.403986000 -0600
+@@ -57,7 +57,7 @@ libbattery_status_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libbattery_status_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/brightness/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/brightness/Makefile.am	2017-03-07 03:08:15.845959600 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = icons src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libbrightness-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygbrightness-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.BrightnessApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/brightness/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/brightness/src/Makefile.am	2017-03-07 02:59:50.813234400 -0600
+@@ -27,7 +27,7 @@ libbrightness_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libbrightness_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/charpick/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/charpick/Makefile.am	2017-03-07 03:08:15.856461900 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = help src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libcharacter-picker-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygcharacter-picker-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.CharpickerApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/charpick/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/charpick/src/Makefile.am	2017-03-07 03:00:07.422374900 -0600
+@@ -28,7 +28,7 @@ libcharacter_picker_applet_la_SOURCES =
+ 	$(NULL)
+ 
+ libcharacter_picker_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/command/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/command/Makefile.am	2017-03-07 03:08:15.867005900 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libcommand-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygcommand-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.CommandApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/command/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/command/src/Makefile.am	2017-03-07 03:00:14.620711800 -0600
+@@ -23,7 +23,7 @@ libcommand_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libcommand_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/cpufreq/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/cpufreq/Makefile.am	2017-03-07 03:08:15.878007000 -0600
+@@ -16,7 +16,7 @@ gsettings_SCHEMAS = $(gsettings_schemas_
+ 
+ @GSETTINGS_RULES@
+ 
+-APPLET_LOCATION = $(pkglibdir)/libcpu-frequency-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygcpu-frequency-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.CPUFreqApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/cpufreq/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/cpufreq/src/Makefile.am	2017-03-07 03:00:23.713491000 -0600
+@@ -51,7 +51,7 @@ libcpu_frequency_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libcpu_frequency_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/drivemount/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/drivemount/Makefile.am	2017-03-07 03:08:15.890014300 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = help src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libdrive-mount-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygdrive-mount-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.DriveMountApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/drivemount/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/drivemount/src/Makefile.am	2017-03-07 03:00:31.038264800 -0600
+@@ -30,7 +30,7 @@ libdrive_mount_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libdrive_mount_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/geyes/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/geyes/Makefile.am	2017-03-07 03:08:15.901014700 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = help themes src
+ 
+-APPLET_LOCATION = $(pkglibdir)/libgeyes-applet.so
++APPLET_LOCATION = $(pkglibdir)/cyggeyes-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.GeyesApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/geyes/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/geyes/src/Makefile.am	2017-03-07 03:00:37.028966400 -0600
+@@ -29,7 +29,7 @@ libgeyes_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libgeyes_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/gweather/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/gweather/Makefile.am	2017-03-07 03:08:15.912008700 -0600
+@@ -5,7 +5,7 @@ SUBDIRS = help src
+ uidir = $(pkgdatadir)/ui
+ ui_DATA = gweather-applet-menu.xml
+ 
+-APPLET_LOCATION=$(pkglibdir)/libgweather-applet.so
++APPLET_LOCATION=$(pkglibdir)/cyggweather-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.GWeatherApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/gweather/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/gweather/src/Makefile.am	2017-03-07 03:04:37.455736400 -0600
+@@ -40,7 +40,7 @@ libgweather_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libgweather_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/inhibit/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/inhibit/Makefile.am	2017-03-07 03:08:15.922009300 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = icons src
+ 
+-APPLET_LOCATION=$(pkglibdir)/libinhibit-applet.so
++APPLET_LOCATION=$(pkglibdir)/cyginhibit-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.InhibitApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/inhibit/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/inhibit/src/Makefile.am	2017-03-07 03:04:44.642539700 -0600
+@@ -27,7 +27,7 @@ libinhibit_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libinhibit_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/invest-applet/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/invest-applet/data/Makefile.am	2017-03-07 03:37:29.910817000 -0600
+@@ -8,7 +8,7 @@ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.InvestApplet.panel-applet.in
+ applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
+ 
+-LOCATION=$(pkglibdir)/libinvest-applet.so
++LOCATION=$(pkglibdir)/cyginvest-applet.dll
+ 
+ $(applet_in_files): $(applet_in_files).in Makefile
+ 	$(AM_V_GEN)sed \
+--- origsrc/gnome-applets-3.22.0/invest-applet/invest/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/invest-applet/invest/Makefile.am	2017-03-07 03:23:12.905920500 -0600
+@@ -44,7 +44,7 @@ libinvest_applet_la_LIBADD = \
+ 	$(NULL)
+ 
+ libinvest_applet_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/mini-commander/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/mini-commander/src/Makefile.am	2017-03-07 03:08:15.934010300 -0600
+@@ -43,7 +43,7 @@ libmini_commander_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libmini_commander_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+@@ -74,7 +74,7 @@ update-icon-cache:
+ 		echo "***   $(gtk_update_icon_cache)"; \
+ 	fi
+ 
+-APPLET_LOCATION=$(pkglibdir)/libmini-commander-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygmini-commander-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.MiniCommanderApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/modem-lights/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/modem-lights/Makefile.am	2017-03-07 03:08:15.946524900 -0600
+@@ -5,7 +5,7 @@ SUBDIRS = src
+ uidir	= $(pkgdatadir)/ui
+ ui_DATA	= modem-applet-menu.xml
+ 
+-APPLET_LOCATION=$(pkglibdir)/libmodem-lights-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygmodem-lights-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.ModemApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/modem-lights/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/modem-lights/src/Makefile.am	2017-03-07 03:04:56.010138500 -0600
+@@ -28,7 +28,7 @@ libmodem_lights_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libmodem_lights_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/multiload/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/multiload/Makefile.am	2017-03-07 03:08:15.957032800 -0600
+@@ -2,7 +2,7 @@ NULL =
+ 
+ SUBDIRS = help src
+ 
+-APPLET_LOCATION=$(pkglibdir)/libmultiload-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygmultiload-applet.dll
+ 
+ gsettings_schemas_in_in = \
+ 	org.gnome.gnome-applets.multiload.gschema.xml.in.in
+--- origsrc/gnome-applets-3.22.0/multiload/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/multiload/src/Makefile.am	2017-03-07 03:05:01.582575900 -0600
+@@ -36,7 +36,7 @@ libmultiload_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libmultiload_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/netspeed/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/netspeed/data/Makefile.am	2017-03-07 03:08:15.968110200 -0600
+@@ -1,6 +1,6 @@
+ NULL =
+ 
+-APPLET_LOCATION=$(pkglibdir)/libnet-speed-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygnet-speed-applet.dll
+ 
+ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.panel.Netspeed.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/netspeed/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/netspeed/src/Makefile.am	2017-03-07 03:05:07.303566800 -0600
+@@ -33,7 +33,7 @@ libnet_speed_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libnet_speed_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/sticky-notes/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/sticky-notes/data/Makefile.am	2017-03-07 03:08:15.978111300 -0600
+@@ -1,6 +1,6 @@
+ NULL =
+ 
+-APPLET_LOCATION=$(pkglibdir)/libsticky-notes-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygsticky-notes-applet.dll
+ 
+ appletdir   = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.StickyNotesApplet.panel-applet.in
+--- origsrc/gnome-applets-3.22.0/sticky-notes/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/sticky-notes/src/Makefile.am	2017-03-07 03:05:12.439064900 -0600
+@@ -41,7 +41,7 @@ libsticky_notes_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libsticky_notes_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/timer/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/timer/data/Makefile.am	2017-03-07 03:08:15.987111800 -0600
+@@ -4,7 +4,7 @@ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.TimerApplet.panel-applet.in
+ applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
+ 
+-APPLET_LOCATION=$(pkglibdir)/libtimer-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygtimer-applet.dll
+ 
+ $(applet_in_files): $(applet_in_files).in Makefile
+ 	$(AM_V_GEN)sed \
+--- origsrc/gnome-applets-3.22.0/timer/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/timer/src/Makefile.am	2017-03-07 03:05:17.689807500 -0600
+@@ -24,7 +24,7 @@ libtimer_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libtimer_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/tracker-search-bar/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/tracker-search-bar/data/Makefile.am	2017-03-07 03:08:15.997112600 -0600
+@@ -4,7 +4,7 @@ appletdir = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.panel.SearchBar.panel-applet.in
+ applet_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
+ 
+-APPLET_LOCATION=$(pkglibdir)/libtracker-search-bar-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygtracker-search-bar-applet.dll
+ 
+ $(applet_in_files): $(applet_in_files).in Makefile
+ 	$(AM_V_GEN)sed                                 \
+--- origsrc/gnome-applets-3.22.0/tracker-search-bar/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/tracker-search-bar/src/Makefile.am	2017-03-07 03:05:23.998131900 -0600
+@@ -20,7 +20,7 @@ libtracker_search_bar_applet_la_CFLAGS =
+ 	$(NULL)
+ 
+ libtracker_search_bar_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/trash/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/trash/data/Makefile.am	2017-03-07 03:08:16.007113400 -0600
+@@ -4,7 +4,7 @@ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.TrashApplet.panel-applet.in
+ applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
+ 
+-APPLET_LOCATION=$(pkglibdir)/libtrash-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygtrash-applet.dll
+ 
+ $(applet_in_files): $(applet_in_files).in Makefile
+ 	$(AM_V_GEN)sed \
+--- origsrc/gnome-applets-3.22.0/trash/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/trash/src/Makefile.am	2017-03-07 03:05:31.654581600 -0600
+@@ -19,7 +19,7 @@ libtrash_applet_la_CFLAGS = \
+ 	$(NULL)
+ 
+ libtrash_applet_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.22.0/windowpicker/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/windowpicker/data/Makefile.am	2017-03-07 03:08:16.017114400 -0600
+@@ -2,7 +2,7 @@ appletdir       = $(LIBPANEL_APPLET_DIR)
+ applet_in_files = org.gnome.applets.WindowPicker.panel-applet.in
+ applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
+ 
+-APPLET_LOCATION=$(pkglibdir)/libwindow-picker-applet.so
++APPLET_LOCATION=$(pkglibdir)/cygwindow-picker-applet.dll
+ 
+ $(applet_in_files): $(applet_in_files).in Makefile
+ 	$(AM_V_GEN)sed \
+--- origsrc/gnome-applets-3.22.0/windowpicker/src/Makefile.am	2016-10-05 09:19:15.000000000 -0500
++++ src/gnome-applets-3.22.0/windowpicker/src/Makefile.am	2017-03-07 03:05:37.918662400 -0600
+@@ -19,7 +19,7 @@ libwindow_picker_applet_la_CFLAGS = \
+ 	$(NULL)
+ 
+ libwindow_picker_applet_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)

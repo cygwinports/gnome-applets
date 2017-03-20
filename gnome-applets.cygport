@@ -1,16 +1,9 @@
 inherit gnome2
 
 NAME="gnome-applets"
-VERSION=3.18.2
+VERSION=3.22.0
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Panel applets"
 DESCRIPTION="A collection of applets for the GNOME Panel"
-PATCH_URI="3.18.1-cygwin-applets.patch"
-
-REQUIRES="girepository-GConf2.0 girepository-Gtk3.0"
-
-DIFF_EXCLUDES='po defs.py'
-
-# libexecdir: avoid collision with mate-applets
-CYGCONF_ARGS="--libexecdir=/usr/libexec/gnome-panel"
+PATCH_URI="3.22.0-cygwin-applets.patch"
