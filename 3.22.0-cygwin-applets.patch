@@ -108,6 +108,17 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
+--- origsrc/gnome-applets-3.24.1/configure.ac	2017-04-11 02:49:40.000000000 -0500
++++ src/gnome-applets-3.24.1/configure.ac	2017-09-04 23:49:18.815376300 -0500
+@@ -176,7 +176,7 @@ PKG_CHECK_MODULES([CPUFREQ_SELECTOR], [
+   glib-2.0 >= $GLIB_REQUIRED
+   gobject-2.0 >= $GLIB_REQUIRED
+   polkit-gobject-1 >= $POLKIT_REQUIRED
+-])
++],[],[enable_selector=no])
+ 
+ dnl -- check for libupower-glib (optional) --------------------------------------------
+ UPOWER_CFLAGS=
 --- origsrc/gnome-applets-3.22.0/cpufreq/Makefile.am	2016-10-05 09:19:15.000000000 -0500
 +++ src/gnome-applets-3.22.0/cpufreq/Makefile.am	2017-03-07 03:08:15.878007000 -0600
 @@ -16,7 +16,7 @@ gsettings_SCHEMAS = $(gsettings_schemas_
@@ -412,6 +423,23 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
+--- origsrc/gnome-applets-3.24.1/window-buttons/Makefile.am	2017-03-27 14:24:29.000000000 -0500
++++ src/gnome-applets-3.24.1/window-buttons/Makefile.am	2017-09-05 00:03:17.040933900 -0500
+@@ -1,4 +1,4 @@
+-APPLET_LOCATION = $(pkglibdir)/libwindow-buttons-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygwindow-buttons-applet.dll
+ 
+ window_buttons_applet_libdir = $(pkglibdir)
+ window_buttons_applet_lib_LTLIBRARIES = libwindow-buttons-applet.la
+@@ -31,7 +31,7 @@ libwindow_buttons_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libwindow_buttons_applet_la_LDFLAGS = \
+-	-avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
 --- origsrc/gnome-applets-3.22.0/windowpicker/data/Makefile.am	2016-10-05 09:19:15.000000000 -0500
 +++ src/gnome-applets-3.22.0/windowpicker/data/Makefile.am	2017-03-07 03:08:16.017114400 -0600
 @@ -2,7 +2,7 @@ appletdir       = $(LIBPANEL_APPLET_DIR)
@@ -430,6 +458,23 @@
  
  libwindow_picker_applet_la_LDFLAGS = \
 -	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-applets-3.24.1/window-title/Makefile.am	2017-03-27 14:26:37.000000000 -0500
++++ src/gnome-applets-3.24.1/window-title/Makefile.am	2017-09-05 00:08:28.028765200 -0500
+@@ -1,4 +1,4 @@
+-APPLET_LOCATION = $(pkglibdir)/libwindow-title-applet.so
++APPLET_LOCATION = $(pkglibdir)/cygwindow-title-applet.dll
+ 
+ window_title_applet_libdir = $(pkglibdir)
+ window_title_applet_lib_LTLIBRARIES = libwindow-title-applet.la
+@@ -26,7 +26,7 @@ libwindow_title_applet_la_SOURCES = \
+ 	$(NULL)
+ 
+ libwindow_title_applet_la_LDFLAGS = \
+-	-avoid-version \
 +	-module -avoid-version -no-undefined \
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
